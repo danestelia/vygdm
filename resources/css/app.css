@@ -1,0 +1,603 @@
+/* ==== Fuentes ====
+
+font-family: 'Courgette', cursive;
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans Thai', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+
+/* ==== Estilos Generales ==== */
+:root {
+  --verde-claro: #1A7363;
+  --verde-oscuro: #083022;
+  --naranja: #BF5A36;
+  --naranja-claro: #D9AE79;
+  --naranja-oscuro: #892102;
+  --gris-oscuro: #3C3C3B;
+  --parrafo: #626262;
+
+}
+
+.px-30 {
+  padding: 30px 0;
+}
+
+.px-40 {
+  padding: 40px 0;
+}
+
+.px-50 {
+  padding: 50px 0;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
+}
+
+*,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  background-color: aliceblue;
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: var(--verde-claro);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: var(--naranja-oscuro);
+  margin: 30px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--naranja-claro);
+  text-align: center;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  color: var(--parrafo);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.centrar-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar-text {
+  text-align: center;
+}
+
+.margen-top {
+  margin-top: 100px;
+}
+
+/* ======= Estilos Medi querys generales ====== */
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .margen-top {
+    margin-top: 150px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* ====== Estilos para la cabecera ====== */
+.cabecera {
+  height: 15px;
+  width: 100%;
+  border-top: 3px solid var(--naranja);
+  background-color: var(--naranja-claro);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo {
+  width: 120px;
+  height: 70px;
+  background-color: var(--naranja-claro);
+  border-radius: 0 0 250px 250px;
+  margin-top: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 23px;
+
+}
+
+
+/* ======= __________________ Estilos Medi querys para Cabecera __________________ ====== */
+
+@media (min-width: 768px) {
+  #boton-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 280px;
+    height: 140px;
+    max-width: 320px;
+  }
+
+  .logo img {
+    width: 140px;
+    top: 5px;
+    left: 70px;
+
+  }
+
+}
+
+/* ======= __________________ Fin Estilos Medi querys para Cabecera __________________ ====== */
+
+
+/* ======= __________________ Estilos para Footer __________________ ====== */
+
+.footer {
+  background-color: var(--verde-oscuro);
+}
+
+.footer p {
+  font-size: 1em;
+}
+
+.contenido-footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contenido-footer a {
+  color: var(--verde-claro);
+  font-size: 1.2em;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.footer-redes a {
+  font-size: 1.8em;
+  margin-left: 15px;
+}
+
+.copy {
+  padding: 15px 0;
+  background-color: #001f00;
+}
+
+/* ======= __________________ Estilos Medi querys para Footer __________________ ====== */
+
+@media (min-width: 768px) {
+  .contenido-footer {
+    flex-direction: row;
+    align-items: normal;
+  }
+  .contenido-footer h3 {
+    font-size: 1.2em;
+  }
+  .contenido-footer a {
+    font-size: 1em;
+    transition: all .3s;
+  }
+  .menu-footer, .footer-redes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenido-footer a:hover {
+    color: #28bda0;
+  }
+
+
+}
+
+/* ======= __________________ Fin Estilos Medi querys para Footer __________________ ====== */
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* ======= Estilos para la página principal index ====== */
+
+.hero {
+  background: url("/public/img/imagen-fondo.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: 50s ease-out infinite alternate hero;
+}
+
+.icono-menu {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  font-size: 2.5em;
+  color: var(--verde-oscuro);
+  transition: all .5s;
+}
+
+@keyframes hero {
+  0% {
+    background-position: left
+  }
+  50% {
+    background-position: center
+  }
+  100% {
+    background-position: left
+  }
+}
+
+#boton-menu {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--verde-claro);
+  background-color: var(--naranja-oscuro);
+  border: none;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+#boton-menu:hover {
+  background-color: #bb2c02;
+}
+
+.contenedor-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.ocultar {
+  display: none;
+}
+
+#nav-menu {
+  display: none;
+  background-color: var(--verde-claro);
+  height: auto;
+  transition: all 5s;
+}
+
+.ul-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ul-menu li {
+  height: 70px;
+}
+
+.ul-menu li a {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #28bda0;
+  padding-left: 40px;
+  border-bottom: 1px solid var(--naranja-claro);
+  transition: all .5s;
+}
+
+.ul-menu li a p {
+  color: #28bda0;
+  padding-right: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+/* ======= ________________ Media querys pagina Index ________________ ========== */
+
+@media (min-width: 768px) {
+
+  .hero {
+    animation: 20s ease-out infinite alternate hero;
+  }
+
+  @keyframes hero {
+    0% {
+      background-position: top
+    }
+    50% {
+      background-position: center
+    }
+    100% {
+      background-position: top
+    }
+  }
+
+  .icono-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    font-size: 2.5em;
+    color: var(--verde-oscuro);
+    transition: all .5s;
+  }
+
+  .contenedor-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-menu {
+    display: flex;
+    height: 160px;
+    border-radius: 10px;
+  }
+
+  .ul-menu {
+    flex-direction: row;
+  }
+
+  .ul-menu li {
+    width: 100%;
+    height: 160px;
+    transition: all .3s;
+  }
+
+  .ul-menu li a {
+    height: 160px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #28bda0;
+    padding-top: 20px;
+    border: none;
+    transition: all .3s;
+  }
+
+  .ul-menu li:hover {
+    height: 175px;
+    background-color: var(--verde-oscuro);
+    border-bottom: 5px solid var(--naranja-claro);
+  }
+
+  .ul-menu li a i {
+    background-color: #69f5d8;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .ul-menu li a p {
+    margin: 0;
+    padding: 0;
+    color: #28bda0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+  }
+
+  i {
+    font-size: 4rem !important;
+    transition: all .5s;
+  }
+
+  .ul-menu li a:hover i {
+    color: var(--verde-oscuro);
+  }
+
+  .ul-menu li a:hover p {
+    color: #41f6d2;
+  }
+}
+
+/* ======= ________________ Fin Media querys pagina Index ________________ ========== */
+
+
+/* ======= ---------------------------------- Estilos para Paginas -------------------------------- ========= */
+
+/* === pagina inicio === */
+
+.contenedor-superior-inicio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-superior-inicio {
+  width: 100%;
+}
+
+.info-superior-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px;
+}
+
+.info-superior-inicio p {
+  text-align: center;
+}
+
+.info-superior-inicio span {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 100;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--naranja);
+}
+
+.contenedor-nosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-nosotros p {
+  text-align: justify;
+}
+
+.contenedor-nosotros strong {
+  font-size: 1.2em;
+  font-family: 'Merriweather', serif;
+}
+
+.seccion-elegirnos-inicio {
+  background-color: #dadada;
+}
+
+/* ======== _________________ Estlos Media query para pagina inicio ________________ ========= */
+
+@media (min-width: 768px) {
+
+  p {
+    font-size: 1em;
+  }
+  .contenedor-superior-inicio {
+    flex-direction: row;
+
+  }
+  .image-superior-inicio{
+    width: 50%;
+  }
+  .info-superior-inicio {
+    width: 50%;
+  }
+
+  .contenedor-nosotros {
+    flex-direction: row;
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+  .imagen-elegirnos {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+  }
+  .imagen-elegirnos img {
+    width: 60%;
+
+  }
+  .info-elegirnos {
+    width: 50%;
+  }
+  .contenedor-clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .titulo-dicen-clientes {
+    width: 50%;
+  }
+  .slaider-clientes {
+    width: 50%;
+  }
+  .nombre-cliente {
+    color: var(--naranja-oscuro);
+  }
+}
+
+
+/* === Pagina servicios === */
+
+.jumbo {
+  background: url("/public/img/flexometro-cel.png") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+.titulo-pagina {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 15px 3px 15px 3px;
+  background-color: var(--verde-claro);
+  margin-bottom: -15px;
+}
+.titulo-pagina h2 {
+  padding: 0;
+  margin: 0;
+  color: var(--naranja-claro);
+}
+.contenedor-servicios {
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
