@@ -13,7 +13,16 @@
         es único, y por
         eso trabajamos estrechamente con nuestros clientes para crear proyectos que se adapten a sus necesidades y
         gustos. </p>
+      <br>
+
+      <div class="btn-action ">
+        <a class="cotiza waves-effect waves-light btn-large"><i class="tiny material-icons left">event_note</i>Cotiza tu proyecto aquí</a>
+        <br>
+        <a class="llama waves-effect waves-light btn-large"><i class="material-icons left">call</i>Contáctanos ahora</a>
+      </div>
+
     </div>
+
   </div>
 </section>
 
@@ -23,23 +32,21 @@
     <div class="info-elegirnos uk-animation-slide-right">
       <h2>Porqué elegirnos: La elección perfecta para tu mobiliario</h2>
       <p>En V&G Diseño Mobiliario, entendemos que la elección de mobiliario para tu hogar es una decisión importante que
-        refleja tu estilo, comodidad y personalidad. Aquí te presentamos las razones por las que deberías elegirnos como
-        tu proveedor de mobiliario para el hogar y la oficina:</p>
-      <ol>
-        <li><strong>Calidad Artesanal Inigualable</strong></li>
-        <li><strong>Diseño Innovador y Personalizado</strong></li>
-        <li><strong>Variedad y Versatilidad</strong></li>
-        <li><strong>Compromiso con la Sostenibilidad</strong></li>
-        <li><strong>Servicio al Cliente Excepcional</strong></li>
-        <li><strong>Precios Competitivos</strong></li>
-      </ol>
+        refleja tu estilo, comodidad y personalidad. </p>
+      <p>
+        Aquí te presentamos las razones por las que deberías elegirnos como
+        tu proveedor de mobiliario para el hogar y la oficina:
+      </p>
+      <br>
+      <a class="waves-effect waves-light btn-small"><i class="material-icons left"></i>Leer más...</a>
     </div>
     <div class="imagen-elegirnos uk-animation-slide-left">
       <img src="{{ asset('img/carpintero.png') }}" alt="Carpintero">
     </div>
   </div>
-
 </section>
+
+
 
 {{-- Sección servicios más importantes --}}
 
@@ -103,7 +110,4 @@
 </section>
 <livewire:front.piecera/>
 
-<scripts>
-  UIkit.slideshow(element, options);
-  UIkit.slideshow(element).startAutoplay();
-</scripts>
+

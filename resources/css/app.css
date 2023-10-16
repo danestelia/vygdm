@@ -22,6 +22,12 @@ font-family: 'Ubuntu', sans-serif;
   --parrafo: #626262;
 
 }
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
 
 .px-30 {
   padding: 30px 0;
@@ -33,6 +39,21 @@ font-family: 'Ubuntu', sans-serif;
 
 .px-50 {
   padding: 50px 0;
+}
+.pb-10 {
+  padding-bottom: 10Px;
+}
+.pb-20 {
+  padding-bottom: 20Px;
+}
+.pb-30 {
+  padding-bottom: 30Px;
+}
+.pb-40 {
+  padding-bottom: 40Px;
+}
+.pb-50 {
+  padding-bottom: 50Px;
 }
 
 .w-full {
@@ -48,6 +69,36 @@ font-family: 'Ubuntu', sans-serif;
   width: 60%;
 }
 
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.ul-style-circle {
+  list-style: circle !important;
+}
+.font-s-1 {
+  font-size: 1em;
+}
+.font-s-1-5 {
+  font-size: 1.5em;
+}
+.font-s-1-2 {
+  font-size: 1.2em;
+}
+.font-s-2 {
+  font-size: 2em;
+}
+.font-s-08 {
+  font-size: 0.8em;
+}
 *,
 p {
   margin: 0;
@@ -161,12 +212,22 @@ p {
 
 }
 
+#bar-menu {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 19px 7px rgb(255, 255, 255);
+}
+.material-icons {
+  font-weight: bold;
+}
+
 
 /* ======= __________________ Estilos Medi querys para Cabecera __________________ ====== */
 
 @media (min-width: 768px) {
   #boton-menu {
     display: none;
+
   }
 
   .logo {
@@ -296,7 +357,7 @@ p {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--verde-claro);
+  color: var(--naranja-claro);
   background-color: var(--naranja-oscuro);
   border: none;
   border-radius: 10px;
@@ -512,6 +573,23 @@ p {
   background-color: #dadada;
 }
 
+.btn-action {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.btn i {
+  font-size: 1.2em !important;
+}
+.slaider-clientes  p {
+  font-size: 0.9em;
+}
+
+
+
 /* ======== _________________ Estlos Media query para pagina inicio ________________ ========= */
 
 @media (min-width: 768px) {
@@ -560,15 +638,23 @@ p {
   .slaider-clientes {
     width: 50%;
   }
+
   .nombre-cliente {
     color: var(--naranja-oscuro);
+  }
+  .btn-action {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .btn-large i {
+    font-size: 1.3em !important;
   }
 }
 
 
 /* === Pagina servicios === */
 
-.jumbo {
+.jumbo-servicios {
   background: url("/public/img/flexometro-cel.png") no-repeat center/50%;
   background-size: cover;
   display: flex;
@@ -595,8 +681,38 @@ p {
   margin-top: 30px;
 }
 
+/* ====== _______________ Media query para pagina servicios _______________ ====== */
+
+@media (min-width: 768px) {
+  .jumbo-servicios {
+    background: url("/public/img/flexometro-midiendo.png") no-repeat center/50%;
+    background-size: cover;
+    height: 300px;
+  }
+  .titulo-pagina {
+    padding: 5px 50px;
+  }
+}
 
 
+/* === Pagina Nosotros === */
+
+.jumbo-nosotros {
+  background: url("/public/img/sobre-nosotros-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Nosotros _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-nosotros {
+    background: url("/public/img/sobre-nosotros.jpg") no-repeat center/50%;
+    height: 300px;
+  }
+}
 
 
 

@@ -3,6 +3,12 @@
 
 <div class="hero">
   <div class="contenedor-menu container">
+    <div class="btn-action">
+      <a class="cotiza waves-effect waves-light btn-large"><i class="tiny material-icons left">event_note</i>Cotiza tu proyecto aquí</a>
+      <br>
+      <a class="llama waves-effect waves-light btn-large"><i class="material-icons left">call</i>Contáctanos ahora</a>
+    </div>
+    <br>
     <button id="boton-menu" class="boton">Menú</button>
     <nav id="nav-menu" class="">
       <ul class="ul-menu">
@@ -18,9 +24,10 @@
           </a>
         </li>
 
-        <li><a href="{{ route('page.servicios') }}">
-            <i class="material-icons">shopping_cart</i>
-            <p>Servicios</p>
+        <li><a id="open-modal" href="#modal-sections" uk-toggle="target: #modal-sections">
+            <i class="material-icons">format_list_bulleted
+            </i>
+            <p>Lo que hacemos</p>
           </a>
         </li>
 
