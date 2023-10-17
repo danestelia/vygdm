@@ -30,3 +30,4 @@ botonMenu.addEventListener('click', () => {
   actionNavMenu();
 });
 
+UIkit.sticky()

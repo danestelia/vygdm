@@ -6,7 +6,7 @@
     </div>
   </div>
 </section>
-<section>
+<section class="mt-40">
   <div class="px-50 container" uk-scrollspy="cls:uk-animation-fade">
     <h2>Acerca de V & G Diseño Mobiliario S.A.S</h2>
     <p>

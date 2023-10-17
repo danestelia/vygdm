@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}"/>
+  <script src="{{ asset('js/uikit.min.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
+  <script src="{{ asset('js/materialize.min.js') }}"></script>
+  <link rel="stylesheet" href="{{ asset('css/misstyles.css') }}">
   <title>{{ $title }} V & G Diseño Mobiliario s.a.s - Reviviendo tus espacios</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   @livewireStyles

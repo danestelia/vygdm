@@ -1,0 +1,184 @@
+:root {
+  --verde-claro: #1A7363;
+  --verde-oscuro: #083022;
+  --naranja: #BF5A36;
+  --naranja-claro: #D9AE79;
+  --naranja-oscuro: #892102;
+  --gris-oscuro: #3C3C3B;
+  --parrafo: #626262;
+
+}
+
+/* ===== Paddings ===== */
+
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  margin-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-25 {
+  padding-top: 25px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-35 {
+  padding-top: 35px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-45 {
+  padding-top: 45px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pt-55 {
+  padding-top: 55px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.px-50 {
+  padding: 50px 0;
+}
+.pb-10 {
+  padding-bottom: 10Px;
+}
+.pb-20 {
+  padding-bottom: 20Px;
+}
+.pb-30 {
+  padding-bottom: 30Px;
+}
+.pb-40 {
+  padding-bottom: 40Px;
+}
+.pb-50 {
+  padding-bottom: 50Px;
+}
+.pb-60 {
+  padding-bottom: 60Px;
+}
+
+.px-10 {
+  padding: 10px 0;
+}
+.px-15 {
+  padding: 15px 0;
+}
+.px-20 {
+  padding: 20px 0;
+}
+.px-25 {
+  padding: 25px 0;
+}
+.px-30 {
+  padding: 30px 0;
+}
+.px-35 {
+  padding: 35px 0;
+}
+.px-40 {
+  padding: 40px 0;
+}
+.px-45 {
+  padding: 45px 0;
+}
+.px-50 {
+  padding: 50px 0;
+}
+.px-55 {
+  padding: 55px 0;
+}
+.px-60 {
+  padding: 60px 0;
+}
+.px-65 {
+  padding: 65px 0;
+}
+
+/* ===== Margins ===== */
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-35 {
+  margin-top: 35px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-45 {
+  margin-top: 45px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-55 {
+  margin-top: 55px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.ul-style-circle {
+  list-style: circle !important;
+}
+.font-s-1 {
+  font-size: 1em;
+}
+.font-s-1-5 {
+  font-size: 1.5em;
+}
+.font-s-1-2 {
+  font-size: 1.2em;
+}
+.font-s-2 {
+  font-size: 2em;
+}
+.font-s-08 {
+  font-size: 0.8em;
+}

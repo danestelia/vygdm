@@ -26,11 +26,6 @@
     <p>{{ date('Y') }} &copy; Derechos reservados V & G Diseño Mobiliario S.A.S</p>
   </div>
 </footer>
-<!-- Compiled and minified JavaScript -->
-<script src="{{ asset('js/materialize.min.js') }}"></script>
-<!-- UIkit JS -->
-<script src="{{ asset('js/uikit.min.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
-<script src=""></script>
+<script src="">{{ asset('js/miscript.js') }}</script>
 </body>
 </html>

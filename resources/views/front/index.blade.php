@@ -24,11 +24,12 @@
           </a>
         </li>
 
-        <li><a id="open-modal" href="#modal-sections" uk-toggle="target: #modal-sections">
-            <i class="material-icons">format_list_bulleted
-            </i>
-            <p>Lo que hacemos</p>
+        <li>
+          <a  href="{{ route('page.servicios') }}" >
+            <i class="material-icons">format_list_bulleted</i>
+            <p>Lo que hacemos <span uk-icon="triangle-down"></span></p>
           </a>
+
         </li>
 
         <li><a href="{{ route('page.galeria') }}">
@@ -55,5 +56,6 @@
   </div>
 
 </div>
+
 
 
