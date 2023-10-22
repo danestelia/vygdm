@@ -21,15 +21,12 @@ class LoginController extends Controller
       'email' => ['required', 'email'],
       'password' => ['required', 'min:8', 'max:15'],
     ]);
-
     if (Auth::attempt($credentials)) {
       $request->session()->regenerate();
-
       return redirect()->intended('/admin');
     }
-
     return back()->withErrors([
-      'email' => 'The provided credentials do not match our records.',
+      'email' => 'La contraseña o el usuario son incorrectos.',
     ])->onlyInput('email');
   }
 }

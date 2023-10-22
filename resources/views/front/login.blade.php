@@ -1,10 +1,8 @@
 <livewire:front.cabecera title="Inicio sesión | "/>
-<section class="margen-top container">
-
+<section class="contenedor-login container">
   <h1 class="centrar-text">Iniciar sesión</h1>
-
-  <div class="row card">
-    <form class="col s12" method="post" action="{{ route('authenticate') }}">
+  <div class="row card" >
+    <form class="col s12 " method="post" action="{{ route('authenticate') }}">
       @csrf
       <div class="row">
         <div class="input-field col s12">
@@ -41,5 +39,4 @@
     </form>
   </div>
 </section>
-
 <livewire:front.piecera/>

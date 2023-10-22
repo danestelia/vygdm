@@ -1,7 +1,7 @@
 <livewire:front.cabecera title="Inicio sesión | "/>
 
 
-<section class="margen-top container">
+<section class="contenedor-create-user container">
   @if($message = Session::get('success'))
     <div class="uk-alert-success" uk-alert>
       <a href class="uk-alert-close" uk-close></a>

@@ -438,6 +438,29 @@ p {
 
 /* ======= ---------------------------------- Estilos para Paginas -------------------------------- ========= */
 
+/* === pagina Login y Create user === */
+.contenedor-login,
+.contenedor-create-user{
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+
+
+/* ======= ________________ Media querys pagina Login y Create user  ________________ ========== */
+@media (min-width: 768px) {
+  .card {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contenedor-login,
+  .contenedor-create-user{
+    padding-top: 230px;
+    padding-bottom: 100px;
+  }
+}
+/* ======= ________________ Fin Media querys pagina Login y Create user ________________ ========== */
+
 /* === pagina inicio === */
 
 .contenedor-superior-inicio {
@@ -645,6 +668,105 @@ p {
   }
 }
 
+/* === Pagina Cocinas === */
+
+.jumbo-cocinas {
+  background: url("/public/img/cocina-integral-jumbo.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Cocinas _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-cocinas {
+    background: url("/public/img/cocina-integral-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+/* === Pagina Closets === */
+
+.jumbo-closets {
+  background: url("/public/img/closet-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Closets _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-closets {
+    background: url("/public/img/closet-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+/* === Pagina Mueble de baño === */
+
+.jumbo-banio {
+  background: url("/public/img/mueble-baño-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina mueble de baño _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-banio {
+    background: url("/public/img/mueble-baño-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+/* === Pagina Centros de entretenimiento === */
+
+.jumbo-centros {
+  background: url("/public/img/centro-de-entretenimiento-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Centros de entretenimiento _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-centros {
+    background: url("/public/img/centro-de-entretenimiento-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+
+/* === Pagina Oficina === */
+
+.jumbo-oficina {
+  background: url("/public/img/oficina-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Oficina _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-oficina {
+    background: url("/public/img/oficina-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
 
 
 

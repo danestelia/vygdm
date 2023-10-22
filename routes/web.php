@@ -12,9 +12,14 @@ Route::controller(PageController::class)->group(function () {
   Route::get('/inicio', 'inicio')->name('inicio');
   Route::get('/sobre-nosotros', 'about')->name('page.nosotros');
   Route::get('/servicios', 'services')->name('page.servicios');
-  Route::get('/galeria-trabajos', 'gallery')->name('page.galeria');
+  Route::get('/galeria-de-trabajos', 'gallery')->name('page.galeria');
   Route::get('/blog', 'blog')->name('page.blog');
   Route::get('/contacto', 'contact')->name('page.contacto');
+  Route::get('/cocinas-integrales', 'cocinas')->name('page.cocinas');
+  Route::get('/closets', 'closets')->name('page.closets');
+  Route::get('/centros-de-entretenimiento', 'centrosEntretenimiento')->name('page.centros');
+  Route::get('/muebles-de-baño', 'banios')->name('page.banios');
+  Route::get('/oficina', 'oficina')->name('page.oficina');
 });
 
 /* ==== Rutas para adminsitracion del usuario ==== */

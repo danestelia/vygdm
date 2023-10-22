@@ -1,4 +1,5 @@
-<livewire:front.cabecera title="Sobre nosotros | "/>
+<livewire:front.cabecera title="Sobre nosotros | "
+                         description="Acerca de V & G Diseño Mobiliario S.A.S, diseño y construcción de mobiliario para el hogar y la oficina en Barranquilla"/>
 <section>
   <div class="jumbo-nosotros" uk-parallax="bgy: -80">
     <div class="titulo-pagina">

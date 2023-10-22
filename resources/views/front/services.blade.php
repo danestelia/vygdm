@@ -18,7 +18,7 @@
         link="img/cocina-integral-miniatura.jpg"
         alt="Cocina integral"
         categoria="Hogar"
-        target=""
+        target="{{ route('page.cocinas') }}"
       />
     </div>
     <div class="col s12 m4">
@@ -31,9 +31,8 @@
         link="img/closet-miniatura.jpg"
         alt="Closet"
         categoria="Hogar"
-        target=""
+        target="{{ route('page.closets') }}"
       />
-      target=""
     </div>
     <div class="col s12 m4">
       <livewire:front.card-services
@@ -45,7 +44,7 @@
         link="img/centro-entretenimiento-miniatura.jpg"
         alt="mueblede entretenimiento"
         categoria="Hogar"
-        target=""
+        target="{{ route('page.centros') }}"
       />
     </div>
   </div>
@@ -60,12 +59,12 @@
         link="img/mueble-baño-miniatura.jpg"
         alt="Muebles para baño"
         categoria="Hogar"
-        target=""
+        target="{{ route('page.banios') }}"
       />
     </div>
     <div class="col s12 m4">
       <livewire:front.card-services
-        title="Escritorios para oficina"
+        title="Mobiliario para oficina"
         contenido="
         Contar con muebles de oficina ergonómicos y funcionales
         es esencial para mejorar la productividad y el bienestar de los trabajadores.
@@ -74,22 +73,10 @@
         link="img/escritorio-oficina-miniatura.jpg"
         alt="Escritorio para oficina"
         categoria="Oficina"
-        target=""
+        target="{{ route('page.oficina') }}"
       />
     </div>
-    <div class="col s12 m4">
-      <livewire:front.card-services
-        title="Puestos de trabajo"
-        contenido="
-        Nos especializamos  en el diseño y producción de mobiliario adaptado a las exigencias y requerimientos
-         específicos de tu espacio de trabajo. Creamos puestos de trabajo a medida para tu negocio. Para más información dale click
-         al botón abajo."
-        link="img/puesto-de-trabajo-miniatura.jpg"
-        alt="Puestos de trabajo"
-        categoria="Oficina"
-        target=""
-      />
-    </div>
+
   </div>
 
 
