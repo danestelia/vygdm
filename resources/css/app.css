@@ -58,6 +58,7 @@ p {
   font-weight: 500;
   color: var(--parrafo);
   text-align: center;
+  line-height: 1.8em;
   font-size: 1.2em;
 }
 
@@ -420,7 +421,7 @@ p {
   }
 
   i {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
     transition: all .5s;
   }
 
@@ -758,7 +759,6 @@ p {
   justify-content: center;
   height: 200px;
 }
-
 /* ====== _______________ Media query para pagina Oficina _______________ ====== */
 @media (min-width: 768px) {
   .jumbo-oficina {
