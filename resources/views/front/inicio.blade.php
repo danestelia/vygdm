@@ -38,7 +38,7 @@
         tu proveedor de mobiliario para el hogar y la oficina:
       </p>
       <br>
-      <a class="waves-effect waves-light btn-small"><i class="material-icons left"></i>Leer más...</a>
+      <a href="{{ route('page.nosotros') }}" class="waves-effect waves-light btn-small"><i class="material-icons left"></i>Leer más...</a>
     </div>
     <div class="imagen-elegirnos uk-animation-slide-left">
       <img src="{{ asset('img/carpintero.png') }}" alt="Carpintero">

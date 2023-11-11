@@ -261,3 +261,17 @@
 .font-s-08 {
   font-size: 0.8em;
 }
+.left {
+  width: auto;
+  display: flex;
+  justify-content: left;
+}
+.right {
+  width: auto;
+  display: flex;
+  justify-content: right;
+}
+.between {
+  display: flex;
+  justify-content: space-between;
+}

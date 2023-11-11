@@ -1,4 +1,2 @@
+@extends('components.layouts.app')
 
-<button><a href="{{ route('logout.admin') }}">loguot</a></button>
-
-<livewire:back.sidenavbar />

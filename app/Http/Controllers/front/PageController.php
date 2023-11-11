@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
+use App\Models\Trabajo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\admin\ImagesController;
 
 class PageController extends Controller
 {
@@ -25,7 +27,15 @@ class PageController extends Controller
   }
   public function gallery()
   {
-    return view('front.gallery');
+    $trabajoCocinas = new ImagesController();
+    $cocinas = $trabajoCocinas -> showCocinas();
+    $closets = $trabajoCocinas->showClosets();
+    $banios = $trabajoCocinas->showBanios();
+    $centros = $trabajoCocinas->showCentros();
+    $oficinas = $trabajoCocinas->showOficina();
+    $varios = $trabajoCocinas->showVarios();
+    return view('front.gallery', compact(
+      'cocinas','closets', 'banios', 'centros', 'oficinas', 'varios'));
   }
   public function blog()
   {

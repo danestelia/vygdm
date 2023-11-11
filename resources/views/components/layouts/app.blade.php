@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="{{ $description }}">
+  <meta name="description" content="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,34 +18,31 @@
   <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}"/>
-  <script src="{{ asset('js/uikit.min.js') }}"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
-  <script src="{{ asset('js/materialize.min.js') }}"></script>
+  <script src="{{ asset('js/uikit.min.js') }}" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js" defer></script>
+  <script src="{{ asset('js/materialize.min.js') }}" defer></script>
   <link rel="stylesheet" href="{{ asset('css/misstyles.css') }}">
-  <title>{{ $title }} V & G Diseño Mobiliario s.a.s - Reviviendo tus espacios</title>
+  @yield('css')
+  <title> V & G Diseño Mobiliario s.a.s - Reviviendo tus espacios</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   @livewireStyles
 </head>
 <body>
-<header>
-  <div class="cabecera">
-      <a href="{{ route('index') }}">
-        <div class="logo">
-          <img src="{{ asset('img/logo-redondo.png') }}" alt="Logo V y G Diseño Mobiliario S.A.S" id="img-logo">
-          <i class="material-icons icono-menu" id="bar-menu">menu</i>
-        </div>
-      </a>
-    @if(Auth::user())
-      <a href="{{ route('logout.admin') }}" class="login-icon">{{ Auth::user()->names }} <span uk-icon="sign-out"  title="Cerrar sesion"></span></a>
-    @else
-      <a href="{{ route('login') }}"><i class="login-icon small material-icons" title="Iniciar sesión">account_circle</i></a>
-    @endif
-
-    <a href="{{ route('create.user') }}" ><i class="register-btn small material-icons" title="Registrarse">person_add</i></a>
+<livewire:back.header />
+<livewire:back.sidenavbar />
+<div class="container">
+{{ $slot }}
+</div>
 
 
-  </div>
-</header>
-
-
+@livewireScripts
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.dropdown-trigger');
+    let instances = M.Dropdown.init(elems, {'alignment': 'right'});
+  });
+</script>
+@yield('js')
+</body>
+</html>
 

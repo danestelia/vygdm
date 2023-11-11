@@ -7,7 +7,7 @@
     </div>
   </div>
 </section>
-<section class="mt-40">
+<section class="vyg-mt-70 vyg-mb-70">
   <div class="px-50 container" uk-scrollspy="cls:uk-animation-fade">
     <h2>Acerca de V & G Diseño Mobiliario S.A.S</h2>
     <p>
@@ -30,7 +30,7 @@
     <h2>Porqué elegirnos</h2>
     <br>
     <div class="uk-column-1-2@s">
-      <div class=" ">
+      <div class="imagen-elegirnos">
         <img src="{{ asset('img/carpintero.png') }}" alt="Carpintero de V & G Diseño Mobiliario en Barranquilla">
       </div>
       <div>
@@ -44,36 +44,36 @@
           tu proveedor de mobiliario para el hogar:
         </p>
         <ol class="ul-style-circle">
-          <li class="font-s-1-2"><strong>Calidad en el trabajo: </strong>
+          <li><strong>Calidad en el trabajo: </strong>
             Nuestro compromiso con la excelencia se refleja en cada mueble que creamos. Utilizamos materiales de alta
             calidad y aplicamos técnicas avanzadas para garantizar que cada mueble tenga un acabado impecable
             y durabilidad a largo plazo.
           </li>
-          <li class="font-s-1-2"><strong>Diseño innovador y personalizado: </strong>
+          <li><strong>Diseño innovador y personalizado: </strong>
             Creamos mobiliario que se adapta a tus necesidades y preferencias. Nuestro equipo colabora contigo para
             entender tus gustos y crear proyectos únicos y personalizados que se integren perfectamente
             en tu espacio y estilo de vida.
           </li>
-          <li class="font-s-1-2"><strong>Variedad y versatibilidad: </strong>
+          <li><strong>Variedad y versatibilidad: </strong>
             Ofrecemos una amplia gama de estilos, desde modernos y minimalistas hasta clásicos y elegantes. Nuestro
             catálogo incluye muebles para cada rincón de tu hogar, Cocinas integrales, closet a medida, centros de
             entretenimiento, mesas de noche y
             oficinas en casa. Además, te brindamos variedad de colores y texturas en materiales para adaptarse
             a tus preferencias.
           </li>
-          <li class="font-s-1-2"><strong>Compromiso con la Sostenibilidad: </strong>
+          <li><strong>Compromiso con la Sostenibilidad: </strong>
             Nos preocupamos por el medio ambiente y nos esforzamos por ser responsables en nuestra producción.
             Utilizamos
             materiales provenientes de fuentes sostenibles, reutilizamos sobrantes de material y aplicamos prácticas de
             fabricación ecoamigables para minimizar
             nuestro impacto en el planeta.
           </li>
-          <li class="font-s-1-2"><strong>Servicio al Cliente Excepcional: </strong>
+          <li><strong>Servicio al Cliente Excepcional: </strong>
             Nuestro personal está comprometido en brindar un servicio al cliente excepcional. Estamos
             aquí para ayudarte en cada etapa, desde la selección del mobiliario hasta la entrega e instalación. Tu
             satisfacción es nuestra máxima prioridad.
           </li>
-          <li class="font-s-1-2"><strong>Precios competitivos: </strong>
+          <li><strong>Precios competitivos: </strong>
             Ofrecemos muebles de alta calidad a precios accesibles. Nos esforzamos por mantener una relación
             calidad-precio óptima para asegurar que obtengas el mejor valor por tu inversión en mobiliario.
           </li>
@@ -85,6 +85,8 @@
           personal.</p>
       </div>
     </div>
+    <br>
+    <br>
     <div class="btn-action pb-50">
       <a class="cotiza waves-effect waves-light btn-large"><i class="tiny material-icons left">event_note</i>Cotiza tu
         proyecto aquí</a>

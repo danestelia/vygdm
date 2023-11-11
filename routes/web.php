@@ -6,6 +6,7 @@ use App\Http\Controllers\user\UserController;
 use App\Http\Controllers\user\LoginController;
 use App\Http\Controllers\admin\AdminController;
 
+
 /* ==== Rutas para páginas del sitio ==== */
 Route::controller(PageController::class)->group(function () {
   Route::get('/', 'index')->name('index');
@@ -36,4 +37,10 @@ Route::controller(LoginController::class)->group(function () {
 Route::controller(AdminController::class)->middleware('auth')->group(function () {
   Route::get('/admin', 'index')->name('index.admin');
   Route::get('/admin/logout', 'logout')->name('logout.admin');
+
 });
+
+Route::group(['middleware' => 'guest'], function () {
+  Route::get('/login', [LoginController::class,'login']);
+});
+

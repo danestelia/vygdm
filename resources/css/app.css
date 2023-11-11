@@ -14,7 +14,7 @@ font-family: 'Ubuntu', sans-serif;
 /* ==== Estilos Generales ==== */
 
 *,
-p {
+p{
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: var(--naranja-claro);
@@ -60,6 +60,38 @@ p {
   text-align: center;
   line-height: 1.8em;
   font-size: 1.2em;
+}
+li{
+  font-family: 'Merriweather', serif;
+  line-height: 1.8em;
+  font-size: 1.2em;
+}
+a:hover {
+  text-decoration: none;
+}
+strong {
+  font-family: 'Merriweather', serif;
+  line-height: 1.8em;
+  font-size: 1em;
+  font-style: italic;
+}
+nav {
+  background-color: var(--verde-claro);
+}
+.btn-admin {
+  background-color: var(--naranja);
+}
+
+.btn-menu-admin {
+  color: var(--naranja) !important;
+}
+.btn-menu-admin:hover {
+  color: var(--naranja-oscuro) !important;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -82,6 +114,25 @@ p {
 .margen-top {
   margin-top: 100px;
 }
+.slogan {
+  margin-top: 50px;
+  font-size: 1.1em;
+  font-style: italic;
+  color: var(--verde-oscuro);
+  background-color: rgba(217, 174, 121, 0.5);
+  padding: 0 30px;
+  border-radius: 10px;
+}
+
+.llama:hover {
+  color: var(--verde-oscuro);
+}
+.cotiza:hover {
+  color: var(--verde-oscuro);
+}
+.logo-admin {
+  width: 110px;
+}
 
 /* ======= Estilos Medi querys generales ====== */
 
@@ -92,13 +143,27 @@ p {
   .margen-top {
     margin-top: 150px;
   }
+  strong {
+    font-family: 'Merriweather', serif;
+    line-height: 1.8em;
+    font-size: 1em;
+    font-style: italic;
+  }
+  li{
+    font-family: 'Merriweather', serif;
+    line-height: 1.8em;
+    font-size: 1em;
+  }
+  .slogan {
+    font-size: 1.5em;
+  }
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
 
 /* ====== Estilos para la cabecera ====== */
 .cabecera {
-  height: 15px;
+  height: 45px;
   width: 100%;
   border-top: 3px solid var(--naranja);
   background-color: var(--naranja-claro);
@@ -125,6 +190,26 @@ p {
   top: 5px;
   left: 23px;
 
+}
+.login-icon {
+  position: absolute;
+  top: 8px;
+  left: 300px;
+  z-index: 1001;
+  color: var(--verde-claro);
+  font-weight: bold;
+}
+.login-icon:hover {
+  color: var(--verde-claro);
+}
+.register-btn {
+  position: absolute;
+  left: 70px;
+  top: 4px;
+  color: var(--naranja);
+}
+.register-btn:hover {
+  color: var(--verde-claro);
 }
 
 #bar-menu {
@@ -156,6 +241,15 @@ p {
     top: 5px;
     left: 70px;
 
+  }
+  .nav-menu .material-icons {
+    font-size: 3em;
+  }
+  .login-icon {
+    left: 1100px;
+  }
+  .register-btn {
+    left: 250px;
   }
 
 }
@@ -314,7 +408,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none;
   color: #28bda0;
   padding-left: 40px;
   border-bottom: 1px solid var(--naranja-claro);
@@ -388,7 +481,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-decoration: none;
     color: #28bda0;
     padding-top: 20px;
     border: none;
@@ -421,7 +513,7 @@ p {
   }
 
   i {
-    font-size: 3.5rem !important;
+
     transition: all .5s;
   }
 
@@ -553,7 +645,7 @@ p {
     justify-content: space-between;
   }
   .imagen-elegirnos {
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: right;
   }
@@ -768,5 +860,79 @@ p {
   }
 }
 
+/* === Pagina Galeria === */
+.jumbo-galeria {
+  background: url("/public/img/galeria-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+.tab a {
+  font-family: 'Roboto', sans-serif !important;
+  color: var(--verde-oscuro) !important;
+  transition: all .3s !important;
+}
+.tab a:hover {
+  font-weight: bold;
+}
+
+/* ====== _______________ Media query para pagina Galería _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-galeria {
+    background: url("/public/img/galeria-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+/* ====== _______________ Fin Media query para pagina Galería _______________ ====== */
+
+
+/* === Pagina Contacto === */
+.jumbo-contacto {
+  background: url("/public/img/contacto-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+.mapa {
+  border: solid 2px #ccc;
+  padding: 20px;
+}
+
+/* ====== _______________ Media query para pagina Contacto _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-contacto {
+    background: url("/public/img/contacto-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+/* ====== _______________ Fin Media query para pagina Contacto _______________ ====== */
+
+
+/* === Pagina Blog === */
+.jumbo-blog {
+  background: url("/public/img/blog-jumbo-cel.jpg") no-repeat center/50%;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+}
+
+/* ====== _______________ Media query para pagina Blog _______________ ====== */
+@media (min-width: 768px) {
+  .jumbo-blog {
+    background: url("/public/img/blog-jumbo.jpg") no-repeat center/200%;
+    background-size: cover;
+    height: 300px;
+  }
+}
+/* ====== _______________ Fin Media query para pagina Blog _______________ ====== */
 
 
